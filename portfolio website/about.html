@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N H Neha - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .fa-linkedin {
+
+            color: white;
+        }
+
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-instagram {
+
+            color: white;
+        }
+
+        body {
+            background-color:rgb(11, 3, 49);
+            color: white;
+            font-family: 'poppins', sans-serif;
+            
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: rgb(13, 151, 175);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        nav ul li a:hover {
+            text-decoration: none;
+            color: rgb(7, 55, 63);
+            font-size: 1.04rem;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(247, 247, 248);
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 60px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2.5rem;
+
+        }
+        .leftSection .buttons{
+            padding: 60px 0px;
+        }
+        
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(166, 101, 226);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(166, 101, 226);
+        }
+
+        .secondSection {
+            max-width: 40vw;
+            /*change max-width 40 to 80 when u want to extend the line*/
+            margin: auto;
+            height: 80vh;
+
+        }
+
+        .secondSection h1 {
+            font-size: 1.6rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 40pw;
+            /*here also we can change width of box..same its fr box adjustment*/
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 135px;
+            /*its for box line adjustment*/
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: 9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 180px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 10px;
+        }
+
+        footer {
+            background-color: rgb(13, 13, 80);
+            height: 233px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 40px;
+            justify-content: space-evenly;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        .footer-right {
+            text-align: center;
+            color: gray;
+            padding: 20px 0px;
+        }
+
+        footer .footer-first {
+            width: 223px;
+        }
+
+        footer .footer-second {
+            margin: 0px 0px;
+        }
+
+        footer .footer-third {
+            margin: 0px 0px;
+        }
+
+        .dark-mode {
+            background-color: black ;
+            color: white;
+        }
+
+        .circle-button {
+            border-radius: 50%;
+            padding: 0;
+            /* Remove any padding to make it a perfect circle */
+            background-color: transparent;
+            /* Optional: Remove background color */
+            border: none;
+            /* Optional: Remove border */
+            cursor: pointer;
+            /* Optional: Show pointer cursor on hover */
+
+        }
+a{
+        text-decoration: none;
+        color: aliceblue;
+}
+/* CSS */
+
+      
+ .custom-heading {
+    margin-top: 50px; /* Add space above the heading */
+    text-align: center;
+    }
+.custom-para{
+margin-top: 30px;
+margin-left: 50px;
+}
+.littleside{
+    margin-top: 20px;
+    margin-left: 80px;
+}
+.paraside{
+    margin-left: 100px;
+}
+   .simply{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 80px;
+   }
+  
+
+
+.text0,.text2{
+    color: black;
+  -webkit-text-fill-color: rgb(212, 203, 121); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+}
+
+.text1,.text3{
+    color: black;
+  -webkit-text-fill-color: #afe699; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+}
+#dummy{
+  position:relative;
+  height:100vh;
+  width:100%;
+}
+#back{
+  position:relative;
+ padding-top:50%;
+  text-align:center;
+ font-size:1.5em;
+  cursor:pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+  #back{
+    cursor:none;
+    font-size:0.8em;
+  }
+  #text{
+        top:70px;
+    font-size:2.25em;
+  }
+
+}
+@media screen and (max-width: 700px) {
+            body{
+                background-color: blueviolet;
+            }
+            .box{
+                flex-direction: column;
+            }
+            .secondSection .vertical{
+                height: unset;
+            }
+            .vertical-title, .vertical-desc{
+                left: 45px;
+            }
+            
+            .firstSection {
+                flex-direction: column-reverse;
+                
+            }
+           .secondSection{
+            height: 144vh;
+           }
+            .rightSection{
+             width: 721px !important;
+        }
+        
+        .image-top{
+            top: 122px;
+        }
+        
+        .secondSection{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        body{
+            min-width: fit-content;
+        }
+    }
+   </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">&lt;N H Neha's Portfolio&#47;&gt;</div>
+            <div class="right"></div>
+            <ul>
+                
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contactme.html">Contact Me</a></li>
+                <li><button class="circle-button" onclick="darkMode()">
+                    <img src="md1-modified.png" width="28" height="28" style="background-color: transparent;">
+                </button></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <main>
+
+
+<h1 class="custom-heading">Hello, I'm N H Neha, a Computer Science Student!</h1>
+<p class="custom-para">Welcome to my digital space! As a passionate Computer Science student, I'm on a quest to combine theoretical knowledge with hands-on experience. Here's a glimpse into my world of academia and aspirations:</p>
+
+<div class="text0">
+<h2 class="littleside">Code Explorer in the Making 💻🚀</h2>
+<p class="paraside">Currently immersed in the world of algorithms, data structures, and coding challenges, I'm honing my skills to become a proficient software engineer. Each line of code is a step towards mastering the art and science of programming.</p>
+</div>
+
+<div class="text1">
+<h2 class="littleside">Future Innovator in IT 🌐🔍</h2>
+<p class="paraside">With a keen interest in software development, I'm gearing up to contribute innovative solutions to real-world challenges. From designing algorithms to crafting efficient code, I'm excited about the possibilities that the IT field holds for me.</p>
+</div>
+
+<div class="text2">  
+<h2 class="littleside">Dancing to the Rhythm of Algorithms and Sequences 🕺🎵</h2>
+<p class="paraside">Beyond the binary world, you'll find me dancing to the rhythm of both algorithms and music. Whether it's debugging code or perfecting a dance move, the pursuit of precision and creativity defines my journey.</p>
+</div>
+
+<div class="text3">
+<h2 class="littleside">Badminton Strategist and Code Strategist 🏸🤖</h2>
+<p class="paraside">Just as I strategize on the badminton court, I strategize in the realm of coding. Both domains demand focus, agility, and a knack for tactics. It's the perfect balance of physical and mental prowess.</p>
+</div>
+
+<div class="text0">
+<h2 class="littleside">Creative Coding and Canvas Explorer 🎨✨</h2>
+<p class="paraside">In addition to the logical structures of code, I explore the creative dimensions of art. Pencil sketches and paintings serve as my creative outlets, providing a harmonious counterpoint to the logical constructs of programming.
+    </p>
+</div>
+
+<div class="text1">
+<h2 class="littleside">Eager Learner and Tech Enthusiast 📚🔧</h2>
+<p class="paraside">As a Computer Science student, I thrive on staying updated with the latest advancements in technology. Every concept mastered, every project undertaken, contributes to my journey as an eager learner and tech enthusiast.
+</p>
+</div>
+
+<p class="littleside">Join me as I navigate the exciting landscape of Computer Science, where logic meets creativity and innovation knows no bounds. The future is digital, and I'm thrilled to be part of the evolution and also you can check out my music playlist in spotify! (Caution : its RAP!🥵)
+ </p>
+<p class="simply"><a href="https://open.spotify.com/playlist/4iCw1gG9ArggEwoOPqVe5s?si=rJqLbJMPRKaPgo7z-csXlA&utm_source=copy-link">View playlist</a>
+</p>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Neha's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="contactme.html">Contact me</a></li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <a href="https://instagram.com/__.nexha.__?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram"></a>
+                <i style="font-size:30px" class="fa"><a href="https://github.com/NHNeha123">&#xf09b;</a></i>
+                <a href="https://www.linkedin.com/in/neha-nh-9aa778256" class="fa fa-linkedin"></a>
+
+            </div>
+        </div>
+        <div class="footer-fourth">
+
+        </div>
+        </div>
+    </footer>
+    <div class="footer-right">
+     Copyright &#169;nehasportfolio.com | All rights reserved
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+       function darkMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+
+        // Check if dark mode is enabled after toggle
+        var isDarkMode = element.classList.contains("dark-mode");
+
+        // Call the animation function based on the dark mode state
+        animateBackground(isDarkMode ? ['#000', '#04044d'] : ['#04044d', '#000']);
+    }
+
+    // Animation function
+    function animateBackground(colors) {
+        anime({
+            targets: 'body',
+            backgroundColor: colors,
+            duration: 1900,
+            easing: 'easeInOutQuad',
+        });
+    }
+
+    // Initial animation on page load
+    animateBackground([ '#fff','#04044d']); 
+        
+</script>
+
+</body>
+
+</html>

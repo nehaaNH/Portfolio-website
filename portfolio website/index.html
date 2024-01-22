@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N H Neha - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+.fa-guithub{
+    color: white;
+}
+        .fa-linkedin {
+
+            color: white;
+        }
+
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-instagram {
+
+            color: white;
+        }
+
+        body {
+            background-color: #040447;
+            color: white;
+            font-family: 'poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: rgb(13, 151, 175);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        nav ul li a:hover {
+            text-decoration: none;
+            color: rgb(7, 55, 63);
+            font-size: 1.04rem;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(247, 247, 248);
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 60px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2.5rem;
+
+        }
+        .leftSection .buttons{
+            padding: 60px 0px;
+        }
+        .leftSection .button-85{
+            
+            padding: 20px;
+            background-color: rgb(18, 18, 99);
+            color: white;
+            border: 2px solid white;
+            border-radius: 12px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(166, 101, 226);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(166, 101, 226);
+        }
+
+        .secondSection {
+            max-width: 40vw;
+            /*change max-width 40 to 80 when u want to extend the line*/
+            margin: auto;
+            height: 80vh;
+
+        }
+
+        .secondSection h1 {
+            font-size: 1.6rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 40pw;
+            /*here also we can change width of box..same its fr box adjustment*/
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 135px;
+            /*its for box line adjustment*/
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: 9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 180px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 10px;
+        }
+
+        footer {
+            background-color: rgb(13, 13, 80);
+            height: 233px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 40px;
+            justify-content: space-evenly;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        .footer-right {
+            text-align: center;
+            color: gray;
+            padding: 20px 0px;
+        }
+
+        footer .footer-first {
+            width: 223px;
+        }
+
+        footer .footer-second {
+            margin: 0px 0px;
+        }
+
+        footer .footer-third {
+            margin: 0px 0px;
+        }
+
+        .dark-mode {
+            background-color: black ;
+            color: white;
+        }
+
+        .circle-button {
+            border-radius: 50%;
+            padding: 0;
+            /* Remove any padding to make it a perfect circle */
+            background-color: transparent;
+            /* Optional: Remove background color */
+            border: none;
+            /* Optional: Remove border */
+            cursor: pointer;
+            /* Optional: Show pointer cursor on hover */
+
+        }
+a{
+        text-decoration: none;
+        color: aliceblue;
+}
+/* CSS */
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+
+
+        
+        @media screen and (max-width: 700px) {
+            body{
+                background-color: blueviolet;
+            }
+            .box{
+                flex-direction: column;
+            }
+            .secondSection .vertical{
+                height: unset;
+            }
+            .vertical-title, .vertical-desc{
+                left: 45px;
+            }
+            
+            .firstSection {
+                flex-direction: column-reverse;
+                
+            }
+           .secondSection{
+            height: 144vh;
+           }
+            .rightSection{
+             width: 721px !important;
+        }
+        
+        .image-top{
+            top: 122px;
+        }
+        
+        .secondSection{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        body{
+            min-width: fit-content;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">&lt;N H Neha's Portfolio&#47;&gt;</div>
+            <div class="right"></div>
+            <ul>
+                
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contactme.html">Contact Me</a></li>
+                <li><button class="circle-button" onclick="darkMode()">
+                    <img src="md1-modified.png" width="28" height="28" style="background-color: transparent;">
+                </button></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection"> Hii, I am <span class="purple">Neha</span>
+                <div>A computer science student passionate about</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="button-85" role="button"><a href="upresume.pdf"> Download Resume</a></button>
+                   
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="haa.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What i have done so far?</span>
+            <h1>Past Internship Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="html.jpg" alt="">
+
+
+                    <div class="vertical-title">
+                        Web development Internship
+                        <p>(Sep 2021)</p>
+                        AgileTEC, Lalbagh
+                    </div>
+                    <div class="vertical-desc">
+                        Developed a simple projects using HTML and CSS .
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="mc.jpg" alt="">
+                    <div class="vertical-title">
+                        Embedded Systems Internship<p>(Aug 2023)</p>
+
+                        Emertxe Information Technologies, Bangalore
+                    </div>
+                    <div class="vertical-desc">
+                        Developed a smiple embedded systems projects using C .
+                    </div>
+
+                </div>
+
+                
+            </div>
+
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Neha's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="contactme.html">Contact me</a></li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <a href="https://instagram.com/__.nexha.__?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram"></a>
+                <i style="font-size:30px" class="fa"><a href="https://github.com/NHNeha123">&#xf09b;</a></i>
+                
+                <a href="https://www.linkedin.com/in/neha-nh-9aa778256" class="fa fa-linkedin"></a>
+
+            </div>
+        </div>
+        <div class="footer-fourth">
+
+        </div>
+        </div>
+    </footer>
+    <div class="footer-right">
+     Copyright &#169;nehasportfolio.com | All rights reserved
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Programming', 'and', 'Designing' ],
+            typeSpeed: 100,
+        });
+        function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+
+</html>
